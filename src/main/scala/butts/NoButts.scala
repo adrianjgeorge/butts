@@ -5,5 +5,6 @@ package butts
   */
 trait NoButts extends SpecButtInterface with ButtMutator{
   def moreButts(): String = "more butts"
+  def becauseButts(): String = super.allOfThem()
   abstract override def allOfThem(): String = "No Butts"
 }

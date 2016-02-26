@@ -16,4 +16,12 @@ public class ButtFactoryTest {
         assertThat(wrappedButt.allOfThem(), equalTo("No Butts"));
         assertThat(((ButtMutator)wrappedButt).moreButts(), equalTo("more butts"));
     }
+
+    @Test
+    public void shouldStillBeAbleToCallParentMethod() throws Exception {
+        ButtFactory buttFactory = new ButtFactory();
+        SpecButtInterface wrappedButt = buttFactory.wrapAButt(new SpecButts());
+        assertThat(wrappedButt.allOfThem(), equalTo("No Butts"));
+        assertThat(((ButtMutator)wrappedButt).becauseButts(), equalTo("butts butts butts"));
+    }
 }

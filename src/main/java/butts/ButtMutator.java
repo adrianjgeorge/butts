@@ -5,4 +5,5 @@ package butts;
  */
 public interface ButtMutator {
     String moreButts();
+    String becauseButts();
 }

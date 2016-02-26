@@ -14,4 +14,10 @@ public class ConcreteNoButtTest {
         ConcreteNoButt concreteNoButt = new ConcreteNoButt();
         assertThat(concreteNoButt.allOfThem(), equalTo("No Butts"));
     }
+
+    @Test
+    public void shouldAccessOldButts() throws Exception {
+        ConcreteNoButt concreteNoButt = new ConcreteNoButt();
+        assertThat(concreteNoButt.becauseButts(), equalTo("butts butts butts"));
+    }
 }
