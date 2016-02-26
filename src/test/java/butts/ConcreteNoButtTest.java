@@ -12,6 +12,6 @@ public class ConcreteNoButtTest {
     @Test
     public void shouldBeNoButts() throws Exception {
         ConcreteNoButt concreteNoButt = new ConcreteNoButt();
-        assertThat(concreteNoButt.allOfThem(), equalTo("No butts"));
+        assertThat(concreteNoButt.allOfThem(), equalTo("No Butts"));
     }
 }
